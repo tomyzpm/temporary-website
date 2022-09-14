@@ -1,0 +1,144 @@
+html, body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* utils */
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+}
+
+/* header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+}
+
+
+header .logo {
+    width: 10rem;
+}
+
+header .brand {
+    display: block;
+}
+
+@media (max-width: 550px) {
+    header {
+        display: block;
+    }
+
+    header .logo {
+        margin: auto;
+        display: block;
+    }
+}
+
+/* layout */
+
+.overlay-img {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+
+    background: rgb(229 231 235);
+}
+
+main {
+    width: 50%;
+}
+
+@media (max-width: 950px) {
+    main {
+        width: 100%;
+    }
+
+    .overlay-img {
+        display: none;
+    }
+}
+
+/* content */
+
+.content h1 {
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.content .contact-info {
+    margin-top: 5rem;
+    font-size: 1.1rem;
+}
+
+.content .contact-info span {
+    display: block;
+    text-align: center;
+}
+
+.content .contact-intro {
+    margin-bottom: 2rem;
+}
+
+.content .btn-link {
+    display: inline-block;
+    padding: 1rem 2rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
+    text-decoration: none;
+    text-align: center;
+    transition: .2s all;
+}
+
+.content .btn-link:visited {
+    color: white;
+}
+
+.content .btn-link:hover, .btn-link:focus {
+    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+}
+
+.content .or {
+    margin: 1.5rem 0;
+    color: rgb(156 163 175);
+}
+
+.content .social-link {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    transition: .2s all;
+    text-decoration: none;
+}
+
+.content .social-link:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.content .social-link:hover {
+    opacity: 0.8;
+}
+
+.social-icon {
+    width: 2rem;
+    margin-right: .5rem;
+}
