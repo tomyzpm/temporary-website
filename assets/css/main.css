@@ -127,6 +127,7 @@ main {
     font-size: 1.1rem;
     transition: .2s all;
     text-decoration: none;
+    color: black;
 }
 
 .content .social-link:visited {
